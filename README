@@ -1,3 +1,14 @@
+----------------------------------------------------------------------------------
+Notes:
+1) This fork contains minimal patches to Barrier Breaker to compile on a still 
+supported Linux distribution.
+2) This fork does NOT contain security updates/patches!!!
+3) ar7xxx has compiled successfully on Debian 9.
+4) This fork does NOT compile on: Manjaro, Ubuntu (and derivate) 20.04, 18.04 
+(16.04 could not be tested because I'm unable to find 16.04, 16.04.1 to download,
+latest 16.04 is not what I want).
+----------------------------------------------------------------------------------
+
 This is the buildsystem for the OpenWrt Linux distribution.
 
 Please use "make menuconfig" to configure your appreciated
