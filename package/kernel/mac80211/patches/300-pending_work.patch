@@ -1731,7 +1731,7 @@ Date:   Mon May 19 21:20:49 2014 +0200
  	ENTRY_DATA_IO_FAILED,
 --- a/drivers/net/wireless/ath/ath9k/main.c
 +++ b/drivers/net/wireless/ath/ath9k/main.c
-@@ -1759,7 +1759,6 @@ out:
+@@ -1757,7 +1757,6 @@ out:
  void ath9k_update_p2p_ps(struct ath_softc *sc, struct ieee80211_vif *vif)
  {
  	struct ath_vif *avp = (void *)vif->drv_priv;
@@ -1739,7 +1739,7 @@ Date:   Mon May 19 21:20:49 2014 +0200
  	u32 tsf;
  
  	if (!sc->p2p_ps_timer)
-@@ -1769,14 +1768,9 @@ void ath9k_update_p2p_ps(struct ath_soft
+@@ -1767,14 +1766,9 @@ void ath9k_update_p2p_ps(struct ath_soft
  		return;
  
  	sc->p2p_ps_vif = avp;
@@ -1757,7 +1757,7 @@ Date:   Mon May 19 21:20:49 2014 +0200
  }
  
  static void ath9k_bss_info_changed(struct ieee80211_hw *hw,
-@@ -1793,6 +1787,7 @@ static void ath9k_bss_info_changed(struc
+@@ -1791,6 +1785,7 @@ static void ath9k_bss_info_changed(struc
  	struct ath_hw *ah = sc->sc_ah;
  	struct ath_common *common = ath9k_hw_common(ah);
  	struct ath_vif *avp = (void *)vif->drv_priv;
@@ -1765,7 +1765,7 @@ Date:   Mon May 19 21:20:49 2014 +0200
  	int slottime;
  
  	ath9k_ps_wakeup(sc);
-@@ -1855,7 +1850,10 @@ static void ath9k_bss_info_changed(struc
+@@ -1853,7 +1848,10 @@ static void ath9k_bss_info_changed(struc
  
  	if (changed & BSS_CHANGED_P2P_PS) {
  		spin_lock_bh(&sc->sc_pcu_lock);
@@ -1777,7 +1777,7 @@ Date:   Mon May 19 21:20:49 2014 +0200
  		spin_unlock_bh(&sc->sc_pcu_lock);
  	}
  
-@@ -2234,14 +2232,6 @@ static void ath9k_sw_scan_complete(struc
+@@ -2232,14 +2230,6 @@ static void ath9k_sw_scan_complete(struc
  	clear_bit(ATH_OP_SCANNING, &common->op_flags);
  }
  
@@ -1792,7 +1792,7 @@ Date:   Mon May 19 21:20:49 2014 +0200
  struct ieee80211_ops ath9k_ops = {
  	.tx 		    = ath9k_tx,
  	.start 		    = ath9k_start,
-@@ -2289,5 +2279,4 @@ struct ieee80211_ops ath9k_ops = {
+@@ -2287,5 +2277,4 @@ struct ieee80211_ops ath9k_ops = {
  #endif
  	.sw_scan_start	    = ath9k_sw_scan_start,
  	.sw_scan_complete   = ath9k_sw_scan_complete,
