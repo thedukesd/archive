@@ -4,7 +4,7 @@ diff --git a/gcc/cp/Make-lang.in b/gcc/cp/Make-lang.in
 index bd1c1d7..a0ea0d4 100644
 --- a/gcc/cp/Make-lang.in
 +++ b/gcc/cp/Make-lang.in
-@@ -111,7 +111,7 @@ else
+@@ -115,7 +115,7 @@ else
  # deleting the $(srcdir)/cp/cfns.h file.
  $(srcdir)/cp/cfns.h:
  endif
@@ -21,7 +21,7 @@ index 05ca753..d9b16b8 100644
 +%language=C++
 +%define class-name libc_name
  %{
- /* Copyright (C) 2000-2014 Free Software Foundation, Inc.
+ /* Copyright (C) 2000-2013 Free Software Foundation, Inc.
  
 @@ -16,14 +18,6 @@ for more details.
  You should have received a copy of the GNU General Public License
@@ -57,7 +57,7 @@ index c845ddf..65801d1 100644
 -#line 1 "cfns.gperf"
 +#line 3 "cfns.gperf"
  
- /* Copyright (C) 2000-2014 Free Software Foundation, Inc.
+ /* Copyright (C) 2000-2013 Free Software Foundation, Inc.
  
 @@ -47,25 +47,18 @@ for more details.
  You should have received a copy of the GNU General Public License
@@ -115,7 +115,7 @@ diff --git a/gcc/cp/except.c b/gcc/cp/except.c
 index 221971a..32340f5 100644
 --- a/gcc/cp/except.c
 +++ b/gcc/cp/except.c
-@@ -1030,7 +1030,8 @@ nothrow_libfn_p (const_tree fn)
+@@ -1025,7 +1025,8 @@ nothrow_libfn_p (const_tree fn)
       unless the system headers are playing rename tricks, and if
       they are, we don't want to be confused by them.  */
    id = DECL_NAME (fn);
