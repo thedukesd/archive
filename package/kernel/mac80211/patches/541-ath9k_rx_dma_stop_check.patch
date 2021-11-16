@@ -9,7 +9,7 @@
  	int i;
  
  	/* Enable access to the DMA observation bus */
-@@ -723,6 +723,16 @@ bool ath9k_hw_stopdmarecv(struct ath_hw 
+@@ -725,6 +725,16 @@ bool ath9k_hw_stopdmarecv(struct ath_hw 
  	}
  
  	if (i == 0) {

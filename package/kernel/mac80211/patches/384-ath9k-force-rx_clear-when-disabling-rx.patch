@@ -11,7 +11,7 @@ Signed-off-by: Felix Fietkau <nbd@openwrt.org>
 
 --- a/drivers/net/wireless/ath/ath9k/mac.c
 +++ b/drivers/net/wireless/ath/ath9k/mac.c
-@@ -674,13 +674,15 @@ void ath9k_hw_startpcureceive(struct ath
+@@ -677,13 +677,15 @@ void ath9k_hw_startpcureceive(struct ath
  
  	ath9k_ani_reset(ah, is_scanning);
  
